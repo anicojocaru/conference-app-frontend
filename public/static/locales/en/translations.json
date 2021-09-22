@@ -13,7 +13,7 @@
   "MyProfile": "My Profile",
   "Forbidden": "Not allowed to see this page!",
   "NavBar": {
-    "Dashboard": "Dashboard",
+    "Welcome": "Welcome",
     "Settings": "Settings",
     "MyFirstMenu": "My first menu"
   },
@@ -30,6 +30,11 @@
     "InvalidDateMessage": "Invalid Date Format",
     "MinDateMessage": "Date should not be before minimal date",
     "MaxDateMessage": "Date should not be after maximal date"
+  },
+    "LandingPage": {
+      "Title": "Welcome!",
+      "Subtitle": "Please enter your email:",
+      "Bad Email": "This is not a valid email"
   },
   "Validations": {
     "Cnp": "The value is not a valid identifier number",
@@ -53,3 +58,4 @@
     }
   }
 }
+

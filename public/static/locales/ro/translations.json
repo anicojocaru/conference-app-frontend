@@ -5,7 +5,7 @@
   "MyProfile": "Profilul meu",
   "Forbidden": "Nu aveti dreptul sa vedeti aceasta pagina!",
   "NavBar": {
-    "Dashboard": "Panou central",
+    "Welcome": "Buna!",
     "Settings": "Setari",
     "User": "Profil",
     "MyFirstMenu": "Primul meu meniu"
@@ -23,6 +23,11 @@
     "InvalidDateMessage": "Formatul datei este invalid",
     "MinDateMessage": "Data introdusa nu poate fi mai mica decat valoarea minima",
     "MaxDateMessage": "Data introdusa nu poate fi mai mare decat valoarea maxima"
+  },
+  "LandingPage": {
+    "Title": "Bun venit!",
+    "Subtitle": "Te rog introdu email-ul personal:",
+    "Bad email": "Acest email nu este valid"
   },
   "Validations": {
     "Cnp": "CNP-ul nu este valid",
