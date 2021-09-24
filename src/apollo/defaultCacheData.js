@@ -1,4 +1,4 @@
-import { emptyString } from 'utils/constants'
+//import { emptyString } from 'utils/constants'
 import { emailKey } from './cacheKeyFunctions'
 
 // Here you define the default values for local apollo state (@client only values)
@@ -6,7 +6,7 @@ import { emailKey } from './cacheKeyFunctions'
 
 
 
- const defaultEmail = { email : emptyString }
+ const defaultEmail = { email : "abc@gmail.com" }
 
 
  export const defaults = {

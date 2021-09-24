@@ -15,7 +15,8 @@
   "NavBar": {
     "Welcome": "Welcome",
     "Settings": "Settings",
-    "MyFirstMenu": "My first menu"
+    "MyFirstMenu": "My first menu",
+    "Conferences":"Conferences"
   },
   "Tooltips": {
     "Logout": "Logout",
@@ -35,6 +36,26 @@
       "Title": "Welcome!",
       "Subtitle": "Please enter your email:",
       "Bad Email": "This is not a valid email"
+  },
+  "UserMenu":{
+    "User":"User"
+  },
+  "General": {
+    "Buttons":{
+      "ApplyFilters": "Apply filters",
+      "ResetFilters":"Reset filters"
+    }
+  },
+  "Conferences": {
+    "Speaker":"Speaker",
+    "Filters": {
+      "StartDate": "Start date",
+      "EndDate": "End date" 
+    },
+    "Attend": "Attend",
+    "Join": "Join",
+    "Withdraw": "Withdraw",
+	  "StatusNotSet": "Not attending"  
   },
   "Validations": {
     "Cnp": "The value is not a valid identifier number",

@@ -1,5 +1,6 @@
 import { curry, without, intersection, isEmpty, not } from 'ramda'
 import { validEmailRegEx } from "./constants"
+import moment from 'moment'
 
 export const extractExactAge = (birthday, referenceDate) => {
   var differenceInMilisecond = Date.parse(referenceDate) || Date.now() - Date.parse(birthday)
@@ -53,3 +54,12 @@ export const subtractOneMillisecond = addMilliseconds(-1)
 
 // validateEmail :: String -> Boolean
 export const validateEmail = email => validEmailRegEx.test(email)
+
+//state -> date
+export const generateDefaultFilters = () => {
+  const today = moment()
+  return {
+      startDate: today.format('YYYY-MM-DD'),
+      endDate: today.add(2, "days").format('YYYY-MM-DD')
+  }
+}
