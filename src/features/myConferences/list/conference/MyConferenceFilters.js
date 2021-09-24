@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { PropTypes } from 'prop-types';
 import {generateDefaultFilters} from 'utils/functions'
 
-function ConferenceFilters(props)  {
+function MyConferenceFilters(props)  {
     const{filters,onApplyFilters}=props
 
     const[startDate, setStartDate]=useState(filters?.startDate)
@@ -57,8 +57,8 @@ function ConferenceFilters(props)  {
         </Button>
     </>
     )}
-ConferenceFilters.propTypes = {
+MyConferenceFilters.propTypes = {
     filters: PropTypes.object,
     onApplyFilters: PropTypes.func
 }
-export default ConferenceFilters
+export default MyConferenceFilters
