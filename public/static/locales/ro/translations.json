@@ -52,7 +52,9 @@
     "StartDate": "Data inceput",
     "EndDate": "Data sfarsit",
     "Type": "Tipul conferintei",
-    "Category": "Categorie"
+    "Category": "Categorie",
+    "SuccessMessage":"Congratulations! You successfully attended to the conference! You will be notified to join 5 minutes before it starts." ,
+    "QRCodeMessage":"Te-ai inscris cu succes la conferinta! Vei fi notificat cu 5 minute inainte sa inceapa. Foloseste urmatorul cod pentru a accesa conferinta: {{code}}"
   },
   "Location": {
     "Name": "Nume",
