@@ -24,7 +24,6 @@ export const extractExactAge = (birthday, referenceDate) => {
 
 // valueOrDefault :: a -> a -> a
 export const valueOrDefault = curry(($default, value) => value ?? $default)
-
 // withoutItem :: a -> [a] -> [a]
 export const withoutItem = curry((x, xs) => xs |> without([x]))
 
@@ -51,11 +50,8 @@ export const addMilliseconds = curry((milliseconds, date) => new Date(date.getTi
 // subtractOneMillisecond :: Date -> Date
 export const subtractOneMillisecond = addMilliseconds(-1)
 
-
-// validateEmail :: String -> Boolean
 export const validateEmail = email => validEmailRegEx.test(email)
 
-//state -> date
 export const generateDefaultFilters = () => {
   const today = moment()
   return {
@@ -63,3 +59,4 @@ export const generateDefaultFilters = () => {
       endDate: today.add(2, "days").format('YYYY-MM-DD')
   }
 }
+export const extractPager = ({ page, pageSize }) => ({ page, pageSize })

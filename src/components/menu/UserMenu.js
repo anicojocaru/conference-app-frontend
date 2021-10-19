@@ -2,13 +2,15 @@ import React, { useState, useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
 
-import { List, ListItem, Collapse, ListItemText, ListItemIcon, makeStyles } from '@material-ui/core'
+import { List, ListItem, Collapse, ListItemText, ListItemIcon, makeStyles} from '@material-ui/core'
 
 import userMenuStyle from 'assets/jss/components/userMenuStyle'
 import cx from 'classnames'
 import LanguageSelector from './LanguageSelector'
 import avatar_default from 'assets/img/default-avatar.png'
 import { useTranslation } from 'react-i18next'
+// import PowerSettingsNew from '@material-ui/icons/PowerSettingsNew'
+// import { useReactOidc } from '@axa-fr/react-oidc-context'
 import userMenuConfig from 'constants/userMenuConfig'
 import UserMenuItem from './UserMenuItem'
 import { useLocation } from 'react-router-dom'
@@ -22,7 +24,7 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage }) {
   const classes = useStyles()
   const { t } = useTranslation()
   const location = useLocation()
-  
+  const [email] = useEmail()
 
   const activeRoute = useCallback(routeName => location.pathname.indexOf(routeName) > -1, [location.pathname])
   const userMenuItems = userMenuConfig
@@ -36,6 +38,8 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage }) {
   )
 
  
+ 
+  
   const itemText =
     classes.itemText +
     ' ' +
@@ -43,8 +47,7 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage }) {
       [classes.itemTextMini]: !drawerOpen
     })
 
-  const [email]=useEmail()
-  const displayName = email ? email :t('UserMenu.User')
+  const displayName = email || t("UserMenu.User")
   return (
     <List className={classes.userMenuContainer}>
       <ListItem className={classes.item + ' ' + classes.userItem}>
@@ -64,6 +67,7 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage }) {
             {userMenuItems.map((userMenu, key) => {
               return <UserMenuItem key={key} userMenu={userMenu} drawerOpen={drawerOpen} activeRoute={activeRoute} />
             })}
+            
             <ListItem className={classes.selectorItem}>
               <LanguageSelector language={language} changeLanguage={changeLanguage} drawerOpen={drawerOpen} />
             </ListItem>
@@ -73,6 +77,8 @@ function UserMenu({ drawerOpen, avatar, language, changeLanguage }) {
     </List>
   )
 }
+
+
 
 UserMenu.propTypes = {
   avatar: PropTypes.string,

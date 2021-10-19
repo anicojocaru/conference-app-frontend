@@ -4,8 +4,8 @@ import { useCallback } from "react"
 
 export const useEmail = () => {
     const [storageEmail, setStorageEmail] = useApolloLocalStorage(emailKey)
-    const email=storageEmail.email
-    const setEmail = useCallback(value => setStorageEmail({ email: value }), [setStorageEmail])
+    const email= storageEmail.email
+    const setEmail= useCallback(value=>setStorageEmail({email: value}), [setStorageEmail])
 
     return [email, setEmail]
 }

@@ -13,15 +13,60 @@
   "MyProfile": "My Profile",
   "Forbidden": "Not allowed to see this page!",
   "NavBar": {
-    "Welcome": "Welcome",
+    "Welcome": "Welcome!",
     "Settings": "Settings",
-    "MyFirstMenu": "My first menu",
+    "MyFirstMenu": "My First Menu",
     "Conferences":"Conferences",
-    "MyConferences":"My conferences"
+    "My Conferences":"My Conferences"
   },
-  "MyConferences":{
-    "Edit": "Edit",
-    "Delete": "Delete"
+    "LandingPage": {
+      "Title": "Welcome!",
+      "Subtitle": "Please enter your email:",
+      "BadEmail": "This is not a valid email!"
+  },
+  "Conferences":{
+    "Filters": {
+      "StartDate": "Start date",
+      "EndDate":"End Date"
+      },
+      "Speaker":"Speaker: ",
+      "Attend": "Attend",
+      "Join": "Join",
+      "Withdraw": "Withdraw",
+	    "StatusNotSet": "Not attending",
+      "SuccessfullyAttended":"Congratulations! You successfully attended to the conference! You will be notified to join 5 minutes before it starts.",
+      "QRCodeMessage":"You successfully attended to the conference! You will be notified to join 5 minutes before it starts. Use the following code to access the conference: {{code}}",
+      "SuccessfullyWithdrawn": "Successfully Withdrawn!",
+      "SuccessfullyJoined":"You successfully joined the conference!"
+  },
+  "My Conference":{
+    "Edit":"Edit",
+    "Delete":"Delete"
+  },
+  "General": {
+    "Congratulations":"Congratulations",
+    "SuggestedConferences":"Here are some suggested conferences",
+    "Buttons": {
+      "ApplyFilters": "Apply filters",
+      "ResetFilters": "Reset filters",
+      "AddConference":"Add conference",
+      "Save":"Save",
+      "AddSpeaker":"Add Speaker",
+      "DeleteSpeaker": "Delete speaker"
+    }
+  },
+  "Conference":{
+    "Info":"Info",
+    "Location":"Location",
+    "Speakers":"Speakers",
+    "Name": "Conference name",
+    "StartDate": "Start date",
+    "EndDate": "End date",
+    "Type": "Conference type",
+    "Categories": "Category"
+  },
+  "UserMenu":{
+    "User":"User"
   },
   "Tooltips": {
     "Logout": "Logout",
@@ -36,60 +81,6 @@
     "InvalidDateMessage": "Invalid Date Format",
     "MinDateMessage": "Date should not be before minimal date",
     "MaxDateMessage": "Date should not be after maximal date"
-  },
-    "LandingPage": {
-      "Title": "Welcome!",
-      "Subtitle": "Please enter your email:",
-      "Bad Email": "This is not a valid email"
-  },
-  "UserMenu":{
-    "User":"User"
-  },
-  "General": {
-    "Buttons":{
-      "ApplyFilters": "Apply filters",
-      "ResetFilters":"Reset filters",
-      "AddConferences":"Add conference",
-      "Save":"Save",
-      "AddSpeaker":"Add Speaker",
-      "DeleteSpeaker":"Delete speaker"
-    }
-  },
-  "Conference": {
-    "Info": "Conference info",
-    "Location": "Location",
-    "Speakers": "Speakers",
-    "Name": "Conference name",
-    "StartDate": "Start date",
-    "EndDate": "End date",
-    "Type": "Conference type",
-    "Category": "Category"
-  },
-  "Location": {
-    "Name": "Name",
-    "Address": "Address",
-    "Country": "Country",
-    "County": "County",
-    "City": "City",
-    "Latitude": "Latitude",
-    "Longitude": "Longitude"
-  },
-  "Speaker": {
-    "Name": "Name",
-    "Nationality": "Nationality",
-    "Rating": "Rating",
-    "MainSpeaker": "Main Speaker"
-  },
-  "Conferences": {
-    "Speaker":"Speaker",
-    "Filters": {
-      "StartDate": "Start date",
-      "EndDate": "End date" 
-    },
-    "Attend": "Attend",
-    "Join": "Join",
-    "Withdraw": "Withdraw",
-	  "StatusNotSet": "Not attending"  
   },
   "Validations": {
     "Cnp": "The value is not a valid identifier number",
@@ -111,6 +102,20 @@
       "MinCharacters": "The length must be greater than {{min}}",
       "Unique": "The value of {{selector}} must be unique"
     }
+  },
+  "Location": {
+    "Name": "Name",
+    "Address": "Address",
+    "Country": "Country",
+    "County": "County",
+    "City": "City",
+    "Latitude": "Latitude",
+    "Longitude": "Longitude"
+  },
+  "Speaker": {
+    "Name": "Name",
+    "Nationality": "Nationality",
+    "Rating": "Rating",
+    "MainSpeaker": "Main Speaker"
   }
 }
-
